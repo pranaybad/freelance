@@ -1,0 +1,25 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="path/to/your/logo.png" alt="Logo" class="w-12 h-12">
+            <h1 class="text-3xl font-bold">
+                <a href="index.html">My Website</a>
+            </h1>
+        </div>
+        <nav>
+            <button id="nav-toggle" class="block lg:hidden px-2 py-1 border rounded text-white border-white hover:text-gray-300 hover:border-gray-300">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul id="nav-menu" class="hidden  lg:flex -ml-6 mt-5  transition duration-500 ease-in-out transform ">
+
+                <li class="lg:pt-0 pt-5"><a href="index.html" class="text-white hover:text-gray-300 transition duration-300">Home</a></li>
+                <li class="lg:pt-0 pt-5"><a href="about.html" class="text-white hover:text-gray-300 transition duration-300">About</a></li>
+                <li class="lg:pt-0 pt-5"><a href="contact.html" class="text-white hover:text-gray-300 transition duration-300">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
