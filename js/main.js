@@ -10,20 +10,30 @@ document.addEventListener("DOMContentLoaded", function() {
         if (id === 'header') {
           const navToggle = document.getElementById('nav-toggle');
           const navMenu = document.getElementById('nav-menu');
+         
           navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('hidden');
+            navMenu.classList.toggle('menu-hidden');
+            navMenu.classList.toggle('menu-visible');
           });
-        }
+           // Close menu when clicking outside
+           document.addEventListener('click', function(event) {
+            const isClickInsideNav = navMenu.contains(event.target);
+            const isClickInsideToggle = navToggle.contains(event.target);
+            if (!isClickInsideNav && !isClickInsideToggle) {
+                navMenu.classList.add('menu-hidden');
+                navMenu.classList.remove('menu-visible');
+            }
+        });
         
-           // Set current year in the footer
-           if (id === 'footer') {
-            const currentYearElement = document.getElementById('current-year');
-            const currentYear = new Date().getFullYear();
-            currentYearElement.textContent = currentYear;
-          }
+        }
 
           
-        
+        // Set current year in the footer
+        if (id === 'footer') {
+          const currentYearElement = document.getElementById('current-year');
+          const currentYear = new Date().getFullYear();
+          currentYearElement.textContent = currentYear;
+        }
       });
   }
 
