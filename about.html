@@ -11,7 +11,28 @@
 <body>
     <div id="header"></div>
     <main>
-        <h2 class="bg-black text-white text-3xl text-center py-5">About Page</h2>
+        <div class="relative pt-20">
+            <div class="relative">
+                <img src="assets/hero.jpg" alt="hero img" class="w-full h-screen object-cover">
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+            </div>
+
+            <div class="text-white absolute flex flex-col lg:flex-row lg:top-1/2 top-1/2 transform -translate-y-1/2 left-1/2 transform -translate-x-1/2 w-full px-6 lg:px-24">
+                <div class="lg:mr-4 mb-4 lg:mb-0 lg:w-1/2 text-center lg:text-left">
+                    <h1 class="lg:text-7xl text-3xl font-extrabold">INXI India Construction Private Limited</h1>
+                </div>
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <!-- <p class="lg:text-4xl text-xl font-bold leading-relaxed lg:leading-loose">Manufacturing from 2018,Import-Export,Building of complete constructions or parts thereof; civil engineering </p> -->
+                    <ul class="lg:text-4xl text-xl font-bold leading-relaxed lg:leading-loose">
+                        <li>Manufacturing from 2018</li>
+                        <li>Import-Export</li>
+                        <li>Building of complete constructions or parts thereof</li>
+                        <li>civil engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
     <div id="footer"></div>
     <script src="js/main.js"></script>
