@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INXI India Construction Private Limited</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class=" pt-40">
+
+            <!-- Gallery photos for Readymade Housing -->
+
+
+            <div class="lg:flex w-full gap-5 px-10 ">
+                <h2 class="text-4xl font-bold text-center underline py-5">Furnitures-Interiors</h2>
+                <div class="w-full">
+                    <div class=" flex-shrink-0 w-full">
+                        <img src="assets/f3.jpg" alt="Image 3" class="w-full h-full object-cover rounded-t-lg">
+                    </div>
+                </div>
+                <div class="w-full">
+                    <h2 class="text-4xl font-bold text-center underline py-5">Furnitures Interiors slide</h2>
+                    <div class="slider-container relative max-w-screen-lg mx-auto overflow-hidden rounded-lg bg-white">
+
+                        <div class="slides flex">
+
+                            <div class="slide flex-shrink-0 w-full">
+                                <img src="assets/f1.jpg" alt="Image 1" class="w-full h-60 object-cover rounded-t-lg">
+                            </div>
+                            <div class="slide flex-shrink-0 w-full">
+                                <img src="assets/f2.jpg" alt="Image 2" class="w-full h-60 object-cover rounded-t-lg">
+                            </div>
+
+                            <div class="slide flex-shrink-0 w-full">
+                                <img src="assets/f4.jpg" alt="Image 4" class="w-full h-60 object-cover rounded-t-lg">
+                            </div>
+                            <div class="slide flex-shrink-0 w-full">
+                                <img src="assets/f5.jpg" alt="Image 5" class="w-full h-60 object-cover rounded-t-lg">
+                            </div>
+                        </div>
+                        <button class="prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none" onclick="moveSlide(-1)">&#10094;</button>
+                        <button class="next absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold text-center underline py-5">Art Paint </h2>
+
+            </div>
+
+        </div>
+    </main>
+    <div id="footer" class="pt-20"></div>
+    <script>
+        let slideIndex = 0;
+
+        function moveSlide(n) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            slideIndex += n;
+
+            if (slideIndex >= totalSlides) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = totalSlides - 1;
+            }
+
+            const offset = -slideIndex * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Optional: auto-slide every 5 seconds
+        setInterval(() => moveSlide(1), 5000);
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

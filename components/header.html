@@ -36,25 +36,33 @@
     .menu-visible {
         transform: translateX(0);
     }
+    
+    .scrolled {
+        background-color: rgb(0, 0, 0);
+        transition: background-color 0.3s ease-in-out;
+    }
 </style>
 
-
-
-<header class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 shadow-lg fixed w-full z-10">
-    <div class="container mx-auto flex justify-evenly items-center">
+<header id="header" class="scrolled p-4 shadow-lg fixed w-full z-10">
+    <div class="container lg:px-14 flex justify-between  items-center">
         <div class="flex items-center space-x-4">
-            <img src="path/to/your/logo.png" alt="Logo" class="w-12 h-12">
-            <h1 class="text-3xl font-bold"><a href="index.html">My Website</a></h1>
+            <a href="index.html">
+                <img src="assets/logo1.png" alt="Logo" class="h-1/2 w-1/2">
+            </a>
         </div>
         <nav>
             <button id="nav-toggle" class="block lg:hidden px-2 py-1 border rounded text-white border-white hover:text-gray-300 hover:border-gray-300">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <ul id="nav-menu" class="menu-hidden fixed top-0 right-0 h-full w-2/3 bg-black text-white transition-transform duration-500 ease-in-out lg:static lg:flex lg:w-auto lg:bg-transparent lg:translate-x-0 lg:space-x-6 lg:items-center lg:h-auto">
                 <li class="lg:pt-0 pt-5"><a href="index.html" class="block text-white hover:text-gray-300 transition duration-300 p-4 lg:p-0">Home</a></li>
                 <li class="lg:pt-0 pt-5"><a href="about.html" class="block text-white hover:text-gray-300 transition duration-300 p-4 lg:p-0">About</a></li>
                 <li class="lg:pt-0 pt-5"><a href="contact.html" class="block text-white hover:text-gray-300 transition duration-300 p-4 lg:p-0">Contact</a></li>
+                <li class="lg:pt-0 pt-5"><a href="OurServices.html" class="block text-white hover:text-gray-300 transition duration-300 p-4 lg:p-0">Our Services</a></li>
             </ul>
         </nav>
     </div>
 </header>
+
+
+<script src="../js/main.js"></script>
