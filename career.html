@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INXI India Construction Private Limited</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- dumm -->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Footer Example</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body class="flex flex-col min-h-screen">
+
+
+
+
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </body>
+
+    </html>
+    <!-- dumm -->
+</body>
+<div id="footer" class="pt-24"></div>
+<script>
+    let slideIndex = 0;
+
+    function moveSlide(n) {
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        slideIndex += n;
+
+        if (slideIndex >= totalSlides) {
+            slideIndex = 0;
+        }
+        if (slideIndex < 0) {
+            slideIndex = totalSlides - 1;
+        }
+
+        const offset = -slideIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Optional: auto-slide every 5 seconds
+    setInterval(() => moveSlide(1), 5000);
+</script>
+<script src="js/main.js "></script>
+</body>
+
+</html>
