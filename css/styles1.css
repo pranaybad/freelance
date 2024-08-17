@@ -1,16 +1,10 @@
-/* General Font Settings */
-
 body {
-    font-family: 'Poppins', sans-serif;
-    /* Attractive and modern font */
-    margin: 0;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
 }
 
-
-/* Header Styling */
-
 header {
+    /* background: #333; */
+    /* color: white; */
     padding: 10px 0;
     text-align: center;
 }
@@ -19,12 +13,7 @@ nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
 }
-
-
-/* Footer Styling */
 
 footer {
     background: #1889c0;
@@ -34,11 +23,15 @@ footer {
     width: 100%;
     bottom: 0;
     position: relative;
-    font-weight: 500;
 }
 
 
-/* Slider Styling */
+/*  */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
 .slider {
     position: relative;
@@ -62,9 +55,6 @@ footer {
     height: auto;
 }
 
-
-/* Navigation Buttons for Slider */
-
 .prev,
 .next {
     position: absolute;
@@ -80,7 +70,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     user-select: none;
-    transition: background-color 0.3s ease;
 }
 
 .prev {
@@ -95,25 +84,3 @@ footer {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-/* Additional Global Styling */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-}
-
-p {
-    margin-bottom: 1.5rem;
-}
-
-
-/* Link to Poppins Font from Google Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');

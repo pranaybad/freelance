@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
      
           window.addEventListener('scroll', function() {
               var header = document.getElementById('header');
-              console.log('Scroll Y:', window.scrollY); // For debugging
+              // console.log('Scroll Y:', window.scrollY); // For debugging
               
               if (window.scrollY > 50) { 
                   header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)'; 

@@ -13,45 +13,53 @@
 
 
 
-    <footer class="bg-gray-900 text-white ">
-        <div class="bg-blue-700 text-white p-6  -mt-3">
+    <footer class="bg-gray-900 text-white w-full">
+        <div class="bg-blue-700 text-white p-6 -mt-3">
             <div class="container mx-auto flex flex-wrap justify-between items-center">
-                <div class="flex items-center space-x-4 mb-4 lg:mb-0">
+                <!-- Contact Information Section -->
+                <div class="flex gap-5    lg:flex-row items-center  ">
                     <div class="flex items-center space-x-2">
-                        <!-- icons -->
-                        <span>+91 22 25751000</span>
+                        <!-- Contact 1 -->
+                        <i class="fas fa-phone  text-xs lg:text-lg"></i>
+                        <span class="text-xs lg:text-lg">+918329999708</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <!-- Contact 2 -->
+                        <i class="fas fa-envelope text-xs lg:text-lg"></i>
+                        <a href="mailto:support@inxiconstruction.com" class="text-xs lg:text-lg hover:underline">support@inxiconstruction.com</a>
                     </div>
 
-                    <div>
-                        <a href="#" class="flex items-center space-x-2">
-                            <!-- icons -->
-                            <span>Supplier Portal</span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="flex items-center space-x-2">
-                            <!-- icons -->
-                            <span>Supplier Portal</span>
-                        </a>
-                    </div>
                 </div>
-                <div class="flex items-center space-x-4 mb-4 lg:mb-0">
-                    <span>Connect With Us</span>
-                    <a href="#" class="flex items-center">
-                        <!-- icons -->
-                    </a>
-                    <a href="#" class="flex items-center">
-                        <!-- icons -->
-                    </a>
+
+                <!-- Connect With Us Section -->
+                <div class="hidden md:block">
+                    <div class=" flex items-center space-x-4">
+                        <span class="text-lg font-semibold">Connect With Us</span>
+                        <a href="#" class="text-white hover:text-gray-300 mx-2">
+                            <i class="fab fa-facebook-f "></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300 mx-2">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-gray-300 mx-2">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+        <!--  -->
+
+
         <div class="container mx-auto px-4 py-10">
             <div class=" md:flex-row flex flex-col justify-between ">
 
                 <div class="w-full md:w-1/4 mb-4 md:mb-0">
-                    <h2 class="text-2xl font-bold mb-2">INXI India Construction Private Limited</h2>
-                    <div class="flex md:space-x-10 space-x-4 text-2xl mt-4 justify-center ">
+                    <h2 class="text-xl font-bold mb-2">INXI India Construction Private Limited</h2>
+                    <div class="flex md:space-x-10 space-x-4  mt-4 justify-center ">
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
@@ -59,50 +67,56 @@
                     </div>
                 </div>
 
-                <!-- Solutions -->
-                <div class="w-full md:w-1/4 mb-4 md:mb-0">
-                    <h3 class="text-2xl md:text-lg font-semibold mb-2">Solutions</h3>
-                    <ul>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Marketing</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Analytics</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Commerce</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Insights</a></li>
-                    </ul>
-                </div>
+                <div class="flex md:w-1/2 w-full">
+                    <div class="flex w-full ">
+                        <!-- Solutions -->
+                        <div class="w-full  mb-4 md:mb-0">
+                            <h3 class=" md:text-lg lg:text-lg text-sm font-semibold mb-2">Solutions</h3>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Marketing</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Analytics</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Commerce</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Insights</a></li>
+                            </ul>
+                        </div>
 
-                <!-- Support -->
-                <div class="w-full md:w-1/4 mb-4 md:mb-0">
-                    <h3 class="text-2xl md:text-lg font-semibold mb-2">Support</h3>
-                    <ul>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Pricing</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Documentation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Guides</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">API Status</a></li>
-                    </ul>
-                </div>
+                        <!-- Support -->
+                        <div class="w-full md:w-1/4 mb-4 md:mb-0">
+                            <h3 class=" md:text-lg lg:text-lg text-sm font-semibold mb-2">Support</h3>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Pricing</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Documentation</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Guides</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">API Status</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <!-- Company -->
-                <div class="w-full md:w-1/4 mb-4 md:mb-0">
-                    <h3 class="text-2xl md:text-lg font-semibold mb-2">Company</h3>
-                    <ul>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">About</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Jobs</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Press</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Partners</a></li>
-                    </ul>
-                </div>
+                    <div class="flex w-full">
+                        <!-- Company -->
+                        <div class="w-full  mb-4 md:mb-0">
+                            <h3 class=" md:text-lg lg:text-lg text-sm font-semibold mb-2">Company</h3>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">About</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Blog</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Jobs</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Press</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Partners</a></li>
+                            </ul>
+                        </div>
 
-                <!-- Legal -->
-                <div class="w-full md:w-1/4 mb-4 md:mb-0">
-                    <h3 class="text-2xl md:text-lg font-semibold mb-2">Legal</h3>
-                    <ul>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Claim</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Privacy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white text-2xl md:text-lg">Terms</a></li>
-                    </ul>
-                </div>
+                        <!-- Legal -->
+                        <div class="w-full md:w-1/4 mb-4 md:mb-0">
+                            <h3 class=" md:text-lg lg:text-lg text-sm font-semibold mb-2">Legal</h3>
+                            <ul>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Claim</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Privacy</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white  md:text-lg lg:text-lg text-sm">Terms</a></li>
+                            </ul>
+                        </div>
 
+                    </div>
+                </div>
             </div>
 
             <!-- Copyright -->

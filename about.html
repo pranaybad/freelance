@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Website</title>
+    <title>About Us - INXI India Construction Private Limited</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="font-poppins bg-gray-100 text-gray-900">
     <div id="header"></div>
     <main>
+        <!-- Hero Section -->
         <div class="relative pt-20">
             <div class="relative">
                 <img src="assets/hero.jpg" alt="hero img" class="w-full h-screen object-cover">
-                <!-- Overlay -->
                 <div class="absolute inset-0 bg-black opacity-50"></div>
             </div>
 
@@ -23,18 +24,92 @@
                     <h1 class="lg:text-7xl text-3xl font-extrabold">INXI India Construction Private Limited</h1>
                 </div>
                 <div class="lg:w-1/2 text-center lg:text-left">
-                    <!-- <p class="lg:text-4xl text-xl font-bold leading-relaxed lg:leading-loose">Manufacturing from 2018,Import-Export,Building of complete constructions or parts thereof; civil engineering </p> -->
                     <ul class="lg:text-4xl text-xl font-bold leading-relaxed lg:leading-loose">
-                        <li>Manufacturing from 2018</li>
+                        <li>Manufacturing since 2018</li>
                         <li>Import-Export</li>
-                        <li>Building of complete constructions or parts thereof</li>
-                        <li>civil engineering</li>
+                        <li>Complete construction projects</li>
+                        <li>Civil engineering</li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        <!-- About Us Section -->
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-6 lg:px-24">
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-12">About Us</h2>
+                <div class="lg:flex lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Welcome to INXI India Construction Private Limited, a dynamic startup at the forefront of the civil construction industry, with a specialized focus on import and export services. Established in 2018, we are dedicated to delivering innovative construction
+                            solutions while fostering global trade relationships that drive growth and development.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Founded with a vision to redefine the construction landscape, INXI India Construction Private Limited combines cutting-edge construction practices with strategic import and export capabilities. Our journey began with a passion for building and a commitment
+                            to quality, and today, we are proud to be a trusted partner in both construction and international trade.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/2 mt-8 lg:mt-0">
+                        <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                        <p class="text-lg leading-relaxed mb-6">
+                            Our mission is to provide top-tier construction services that meet the highest standards of quality and safety while seamlessly integrating import and export operations to ensure timely delivery of materials and resources. We aim to build structures that
+                            are not only functional but also sustainable and aesthetically pleasing.
+                        </p>
+                        <h3 class="text-2xl font-bold mb-4">Our Values</h3>
+                        <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                            <li>Quality: Upholding the highest standards in all our projects and services.</li>
+                            <li>Innovation: Embracing new technologies and methodologies to enhance our offerings.</li>
+                            <li>Integrity: Conducting our business with transparency, honesty, and respect.</li>
+                            <li>Sustainability: Committing to environmentally responsible practices in construction and trade.</li>
+                            <li>Customer Focus: Prioritizing the needs and satisfaction of our clients.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="container mx-auto px-6 lg:px-24">
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-12">What We Do</h2>
+                <div class="lg:flex lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <p class="text-lg leading-relaxed mb-6">
+                            Our comprehensive range of services includes:
+                        </p>
+                        <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                            <li>Civil Construction: From residential to commercial projects, we bring expertise and precision to every build.</li>
+                            <li>Import and Export: Leveraging global networks to source and supply high-quality construction materials and equipment.</li>
+                            <li>Project Management: Overseeing projects from concept to completion, ensuring they are delivered on time and within budget.</li>
+                            <li>Sustainable Building: Implementing eco-friendly practices and materials to minimize environmental impact.</li>
+                        </ul>
+                    </div>
+                    <div class="lg:w-1/2 mt-8 lg:mt-0">
+                        <h3 class="text-2xl font-bold mb-4">Why Choose Us</h3>
+                        <ul class="list-disc list-inside text-lg leading-relaxed space-y-2">
+                            <li>Expertise and Innovation: Combining construction excellence with strategic import and export capabilities.</li>
+                            <li>Global Reach: Leveraging international trade networks to source the best materials and resources.</li>
+                            <li>Client-Centric Approach: Tailoring our services to meet the unique needs of each client.</li>
+                            <li>Sustainability Commitment: Focused on eco-friendly building practices and materials.</li>
+                            <li>Comprehensive Solutions: Offering a full spectrum of services from planning and design to execution and supply chain management.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="bg-white py-16">
+            <div class="container mx-auto px-6 lg:px-24">
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-center mb-12">Our Vision</h2>
+                <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto">
+                    At INXI India Construction Private Limited, our vision is to be the leading force in the civil construction industry, setting the benchmark for excellence, innovation, and sustainability. We strive to build not just structures, but lasting relationships
+                    and communities, driven by our commitment to quality, safety, and environmental stewardship.
+                </p>
+            </div>
+        </section>
     </main>
-    <div id="footer"></div>
+    <div id="footer" class="pt-24"></div>
     <script src="js/main.js"></script>
 </body>
 
