@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELVET Category - INXI India Construction Private Limited</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        
+        .prev {
+            left: 10px;
+        }
+        
+        .next {
+            right: 10px;
+        }
+        
+        .slider-btn:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="pt-24 bg-gray-100">
+
+            <!-- Velvet Category Slider -->
+            <section class="container mx-auto py-12">
+                <h2 class="text-5xl font-bold text-center text-blue-800 mb-8">Steel Structure House
+                </h2>
+                <p class="text-center max-w-3xl mx-auto text-gray-600 mb-12">
+                    Widely used in large factories, warehouses, workshops, bridges, sports venues and other buildings.
+                </p>
+
+                <div class="slider  ">
+                    <div class="slides">
+                        <!-- Slide 1 -->
+
+
+                        <div class="slide">
+                            <img class="w-full h-[50vh] object-cover" src="assets/Steel1.png" alt="">
+                            <h3 class="text-2xl font-semibold text-gray-800 text-center mt-4"></h3>
+
+                        </div>
+                        <div class="slide">
+                            <img class="w-full h-[50vh] object-cover" src="assets/Steel2.png" alt="">
+                            <h3 class="text-2xl font-semibold text-gray-800 text-center mt-4"></h3>
+
+                        </div>
+                        <div class="slide">
+                            <img class="w-full h-[50vh] object-cover" src="assets/Steel3.png" alt="">
+                            <h3 class="text-2xl font-semibold text-gray-800 text-center mt-4"></h3>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                    <button class="slider-btn prev" onclick="moveSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next" onclick="moveSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <!--  -->
+
+
+
+            </section>
+        </div>
+    </main>
+    <div id="footer" class="pt-20"></div>
+
+    <script>
+        let currentSlide = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
